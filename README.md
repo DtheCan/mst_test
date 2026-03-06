@@ -71,18 +71,7 @@ Paywall
 При последующих запусках приложение проверяет статус подписки и сразу открывает главный экран, если подписка активна.
 
 📱 Скриншоты
-Приветственный экран
-<img width="575" height="1280" alt="image" src="https://github.com/user-attachments/assets/303d54ca-b8e7-4fd7-b02e-a304bdae5c8f" />
-
-Экран предложения премиум контента
-<img width="575" height="1280" alt="image" src="https://github.com/user-attachments/assets/09b40edc-b840-4ee2-a7bd-71417fba60b5" />
-
-Экраны с выбором подписки
-<img width="575" height="1280" alt="image" src="https://github.com/user-attachments/assets/4af4c9f6-ace2-4611-9edf-a7109b65da59" />
-<img width="575" height="1280" alt="image" src="https://github.com/user-attachments/assets/f52f0040-49e9-48bd-b0e7-bdab1e6b546c" />
-
-Экран с премиум контентом после оформления подписки
-<img width="575" height="1280" alt="image" src="https://github.com/user-attachments/assets/465264eb-c5ab-4419-bdb9-2449ed7184f1" />
+<div align="center"> <h3>Онбординг</h3> <table> <tr> <td align="center" width="33%"> <img src="https://github.com/user-attachments/assets/303d54ca-b8e7-4fd7-b02e-a304bdae5c8f" width="280" alt="Приветственный экран"/> <br /> <sub><b>Экран 1:</b> Приветственный экран</sub> </td> <td align="center" width="33%"> <img src="https://github.com/user-attachments/assets/09b40edc-b840-4ee2-a7bd-71417fba60b5" width="280" alt="Экран премиум контента"/> <br /> <sub><b>Экран 2:</b> Премиум возможности</sub> </td> </tr> </table> <br /> <h3>Paywall (Выбор подписки)</h3> <table> <tr> <td align="center" width="33%"> <img src="https://github.com/user-attachments/assets/4af4c9f6-ace2-4611-9edf-a7109b65da59" width="280" alt="Экран выбора подписки"/> <br /> <sub><b>Начальное состояние:</b> Ни один план не выбран</sub> </td> <td align="center" width="33%"> <img src="https://github.com/user-attachments/assets/f52f0040-49e9-48bd-b0e7-bdab1e6b546c" width="280" alt="Экран с выбранной подпиской"/> <br /> <sub><b>Выбранный план:</b> Годовая подписка</sub> </td> </tr> </table> <br /> <h3>Главный экран</h3> <table> <tr> <td align="center" width="33%"> <img src="https://github.com/user-attachments/assets/465264eb-c5ab-4419-bdb9-2449ed7184f1" width="280" alt="Главный экран с премиум контентом"/> <br /> <sub><b>Премиум контент:</b> Доступен после оформления подписки</sub> </td> </tr> </table> </div>
 
 
 
