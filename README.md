@@ -1,16 +1,90 @@
-# mst_test
+MST Test App Flutter
+Простое Flutter приложение с онбордингом, экраном подписки (paywall) и главным экраном, демонстрирующее принципы чистой архитектуры и современные подходы к управлению состоянием.
 
-A new Flutter project.
+📱 Функционал
+Онбординг (2 экрана) - приветственные экраны с иллюстрациями
 
-## Getting Started
+Paywall экран - выбор месячной или годовой подписки с эмуляцией покупки
 
-This project is a starting point for a Flutter application.
+Главный экран - контент, доступный только при активной подписке
 
-A few resources to get you started if this is your first Flutter project:
+Сохранение состояния - запоминает статус подписки между сессиями
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+🏗 Архитектура
+Проект построен с использованием Clean Architecture и разделен на три слоя:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Presentation - UI и BLoC (управление состоянием)
+
+Domain - бизнес-логика, сущности, use cases
+
+Data - репозитории, источники данных (SharedPreferences)
+
+🛠 Технологии
+Flutter - UI toolkit
+
+flutter_bloc ^9.1.1 - управление состоянием
+
+equatable ^2.0.8 - сравнение объектов
+
+get_it ^9.2.1 - dependency injection
+
+shared_preferences ^2.5.4 - локальное хранение данных
+
+📁 Структура проекта
+```
+lib/
+├── core/
+│   ├── constants/           # Константы приложения
+│   └── di/                   # Dependency injection (GetIt)
+├── features/
+│   ├── main_screen/          # Главный экран и управление подпиской
+│   │   ├── data/             # Репозитории
+│   │   ├── domain/           # Сущности, use cases
+│   │   └── presentation/     # BLoC, UI
+│   ├── onboarding/           # Онбординг
+│   │   └── presentation/     # UI экранов онбординга
+│   └── paywall/              # Экран подписки
+│       ├── domain/           # Сущности планов подписки
+│       └── presentation/     # UI paywall
+└── main.dart                 # Точка входа
+```
+
+🎯 Использование
+Онбординг
+При первом запуске отображаются два экрана онбординга. На последнем экране нажмите "Продолжить" для перехода к выбору подписки.
+
+Paywall
+Выберите один из двух планов подписки:
+
+Месячная подписка - $9.99/месяц
+
+Годовая подписка - $69.99/год (экономия 42%)
+
+Нажмите "Продолжить" для эмуляции покупки
+
+После "покупки" вы автоматически перейдете на главный экран
+
+Главный экран
+Отображает список премиум-контента, доступного только при активной подписке.
+
+Повторный запуск
+При последующих запусках приложение проверяет статус подписки и сразу открывает главный экран, если подписка активна.
+
+📱 Скриншоты
+Приветственный экран
+<img width="575" height="1280" alt="image" src="https://github.com/user-attachments/assets/303d54ca-b8e7-4fd7-b02e-a304bdae5c8f" />
+
+Экран предложения премиум контента
+<img width="575" height="1280" alt="image" src="https://github.com/user-attachments/assets/09b40edc-b840-4ee2-a7bd-71417fba60b5" />
+
+Экраны с выбором подписки
+<img width="575" height="1280" alt="image" src="https://github.com/user-attachments/assets/4af4c9f6-ace2-4611-9edf-a7109b65da59" />
+<img width="575" height="1280" alt="image" src="https://github.com/user-attachments/assets/f52f0040-49e9-48bd-b0e7-bdab1e6b546c" />
+
+Экран с премиум контентом после оформления подписки
+<img width="575" height="1280" alt="image" src="https://github.com/user-attachments/assets/465264eb-c5ab-4419-bdb9-2449ed7184f1" />
+
+
+
+
+
